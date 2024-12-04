@@ -69,7 +69,7 @@ services:
       - backend
 
   app03:
-    build: .
+    image: yazminoli/entrega3-app03
     ports:
       - "3000:3000"
     depends_on:

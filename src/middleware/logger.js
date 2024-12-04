@@ -23,7 +23,7 @@ module.exports = (req, res, next) => {
             res: {
                 statusCode: res.statusCode,
                 statusMessage: res.statusMessage,
-                response: req.method === 'GET' ? res.data : null
+                response: res.data
             }
         });
         await client.connect();
